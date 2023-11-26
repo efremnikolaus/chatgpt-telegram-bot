@@ -132,7 +132,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
 
     private String generateBotResponse(String userMessage) {
-        OpenAiService service = new OpenAiService("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");
+        OpenAiService service = new OpenAiService("your-openai-token");
         CompletionRequest completionRequest = CompletionRequest.builder()
                 .prompt(userMessage)
                 .model("text-davinci-003")
